@@ -193,7 +193,7 @@ const Meet = () => {
                 <div ref={alertbox} className="p-4 hidden absolute w-full left-0 top-0 mb-4 text-sm text-green-700 bg-green-100 rounded dark:bg-green-200 dark:text-green-800" role="alert">
                     <span className="font-medium">Success alert!</span> Room Code is copied
                 </div>
-                <h2 className='text-center text-green-600 text-3xl capitalize'>video chat</h2>
+                <h1 className='text-center text-black-600 text-5xl capitalize'>	Live Stream</h1>
 
                 <div className=" p-2 box-container flex-1 my-4 flex flex-wrap  justify-center gap-4 mx-auto overflow-scroll " ref={mydiv} >
                     <div className="left border h-fit rounded overflow-hidden bg-slate-400 relative" >

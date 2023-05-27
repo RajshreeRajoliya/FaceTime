@@ -46,11 +46,11 @@ const Home = () => {
 
   return (
     <div>
-      <h1 className='text-center my-8 text-3xl'>Video chat App</h1>
+      <h1 className='text-center my-8 text-7xl text-black-600'>Face Time</h1>
       {/* host meeting */}
       <div className='flex flex-col container mx-auto  md:flex-row'>
         <div className='mx-auto p-4 w-full  md:w-1/3'>
-          <h2 className=' text-2xl text-center my-6 text-green-600 '>Create The Meeting</h2>
+          <h2 className=' text-2xl text-center my-6 text-black-600 '>New Meeting</h2>
           <form onSubmit={(e) => { e.preventDefault() }} className=' flex flex-col mx-auto space-y-6 '>
             {
               code &&
@@ -69,21 +69,25 @@ const Home = () => {
 
               </div>
             }
-            <button className=' bg-blue-500 text-white py-2 rounded-lg ' onClick={call}>create Meeting</button>
+            <button className=' bg-blue-500 text-white py-2 rounded-lg ' onClick={call}>Create a Meeting</button>
           </form>
         </div>
         {/* join meeting */}
         <div className='mx-auto p-4 w-full  md:w-1/3'>
-          <h2 className='text-2xl text-center my-6 text-green-600 '>join The Meeting</h2>
+          <h2 className='text-2xl text-center my-6 text-black-600 '>Join Meeting</h2>
           <form onSubmit={join} className='flex flex-col mx-auto space-y-6 '>
             <input required={true} type="text" value={name} onChange={namehandle} className='border p-2' placeholder='Enter your Name' />
             <input required value={val} onChange={change} type="text" className='border p-2' placeholder='Enter your code' />
-            <button type='submit' className=' bg-blue-500 text-white py-2 rounded-lg'>join Meeting</button>
+            <button type='submit' className=' bg-blue-500 text-white py-2 rounded-lg'>Join Meeting</button>
           </form>
+
+         
 
         </div>
       </div>
+      <p className="align-[8px] py-5 text-center">Made with ❤️ by Rajshree Rajoliya</p>
     </div>
+  
   )
 }
 
